@@ -186,6 +186,9 @@ module Forge
       # Copy the images directory over
       FileUtils.cp_r(File.join(@assets_path, 'images'), @project.build_path) if File.exists?(File.join(@assets_path, 'images'))
 
+      # Copy the fonts directory over
+      FileUtils.cp_r(File.join(@assets_path, 'fonts'), @project.build_path) if File.exists?(File.join(@assets_path, 'fonts'))
+
       # Check for screenshot and move it into main build directory
       Dir.glob(File.join(@project.build_path, 'images', '*')).each do |filename|
         if filename.index(/screenshot\.(png|jpg|jpeg|gif)/)
