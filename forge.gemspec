@@ -27,6 +27,7 @@ Gem::Specification.new do |gem|
   gem.add_runtime_dependency(%q<less>, [">= 2.0.7"])
   gem.add_runtime_dependency(%q<rb-fsevent>, [">= 0.9.1"])
   gem.add_runtime_dependency(%q<yui-compressor>, [">= 0.9.6"])
+  gem.add_runtime_dependency(%q<coffee-script>, ["~> 2.2.0"])
   gem.add_development_dependency(%q<rspec>, [">= 0"])
   gem.add_development_dependency(%q<cucumber>, [">= 0"])
   gem.add_development_dependency(%q<aruba>, [">= 0"])
